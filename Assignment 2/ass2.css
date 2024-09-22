@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+}
+a:hover{
+    color:aqua;
+}
+img{
+    border-radius:8pt;
+    display:inline-block;
+    text-align: right;
+}
+#content.p {
+    display: inline-block;
+    margin-left: auto;
+}
+header {
+    text-size-adjust:48pt;
+}
+div [
+    width: 500px;
+]
