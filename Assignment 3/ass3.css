@@ -1,0 +1,19 @@
+* {
+    background-color: aliceblue;
+}
+
+.container {
+    display:grid;
+    height:100vh;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows:20vh 20vh 20vh 20vh 20vh;
+    width:100%;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.item-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-content: flex-end;
+}
