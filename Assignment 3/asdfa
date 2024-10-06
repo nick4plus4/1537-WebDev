@@ -1,0 +1,23 @@
+    .contentColumns {
+        grid-column: 2 / 4;
+        grid-row: 6 / 10;
+        width: 100vw;
+        text-align: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns:25vw 25vw 25vw 25vw;
+        grid-template-rows: auto;
+    }
+    .contentColumns div{
+        width:100%;
+        grid-row: 1 / 2;
+        grid-column: 2 / 5
+    }
+
+    .contentColumns div img {
+        text-align: center;
+        scale: 50%;
+    }
+    .contentColumns div p{
+        text-align: center;
+    }
