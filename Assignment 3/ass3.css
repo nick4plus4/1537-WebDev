@@ -72,7 +72,8 @@
         word-wrap: break-word;
         max-width: 100%;
         margin-left: 10px;
-        margin-right:10px;;
+        margin-right: 10px;
+        ;
     }
 
     .item-3 figure img {
@@ -99,7 +100,7 @@
         text-align: left;
         word-wrap: break-word;
         width: 100%;
-        
+
     }
 
     .item-4 {
@@ -170,7 +171,7 @@
         word-wrap: break-word;
         max-width: 100%;
         margin-left: 10px;
-        margin-right:10px;
+        margin-right: 10px;
     }
 
     .item-6 a {
@@ -215,7 +216,7 @@
         word-wrap: break-word;
         max-width: 100%;
         margin-left: 10px;
-        margin-right:10px;
+        margin-right: 10px;
     }
 
     .item-7 a {
@@ -259,7 +260,7 @@
         word-wrap: break-word;
         max-width: 100%;
         margin-left: 10px;
-        margin-right:10px;
+        margin-right: 10px;
     }
 
     .item-8 a {
@@ -304,7 +305,7 @@
         word-wrap: break-word;
         max-width: 100%;
         margin-left: 10px;
-        margin-right:10px;
+        margin-right: 10px;
     }
 
     .item-9 a {
@@ -350,6 +351,13 @@
     .laptopOnly {
         display: none;
     }
+
+    .pcStuff {
+        display: none;
+    }
+    .pcButtons{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 701px) and (max-width:1280px) {
@@ -358,8 +366,6 @@
         display: flex;
         justify-content: space-around;
         width: 100%;
-        text-decoration: none;
-        height: 100%;
     }
 
     .item-1 nav a i {
@@ -374,9 +380,10 @@
     }
 
     .item-1 {
-        grid-row: 1 / 3;
+        grid-row: 1 / 2;
         grid-column: 2 / 7;
         width: 100%;
+        height: auto;
     }
 
     .item-1 a {
@@ -391,21 +398,20 @@
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         text-align: center;
-        margin-top: 50px;
     }
 
     #logo {
         border-radius: 70%;
-        object-fit: cover;
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 75%;
     }
 
     footer {
-        position: absolute;
+        position: fixed;
         bottom: 0;
-        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         width: 100%;
+        background-color:rgb(238,248,247);
     }
 
     footer a {
@@ -420,7 +426,7 @@
     .container {
         display: grid;
         grid-template-columns: 16vw 16vw 16vw 16vw 16vw 16vw;
-        grid-template-rows: 10vh 1fr 25vh 1fr 1fr 40vh;
+        grid-template-rows: 10vh 1fr 1fr 1fr 1fr 40vh;
         grid-auto-rows: 10vh;
         column-gap: 10px;
         height: 100vh;
@@ -520,9 +526,8 @@
     }
 
     .laptoplayout p {
-        background-color: white;
+        background-color: rgb(230, 228, 228);
         z-index: 1;
-        font-size: x-large;
         padding-top: 10px;
         padding-bottom: 10px;
         margin-left: 28px;
@@ -598,16 +603,14 @@
 
     .item-5 {
         grid-row: 5 / 6;
-        grid-column: 3 / 5;
+        grid-column: 4 / 6;
+        max-width: 100%;
     }
 
     .item-5 form {
         background-color: transparent;
-        overflow-x: auto;
-        scale: 130%;
-        max-width: fit-content;
-        margin-top: 15px;
-        margin-left: 170px;
+        width: 100%;
+        margin-top: 40px;
     }
 
     .item-5 form input {
@@ -819,6 +822,273 @@
         color: black;
     }
 
+    .pcStuff {
+        display: none;
+    }
+    .pcButtons{
+        display: none;
+    }
 }
 
-@media only screen and (min-width:1281px) {}
+@media only screen and (min-width:1281px) and (max-width:1600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-rows: 1fr;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        background-color:rgb(238,248,247);
+    }
+
+    footer a {
+        color: gray;
+        margin-left: 35px;
+    }
+
+    body {
+        margin: 0px;
+    }
+    a:hover {
+        color: black;
+    }
+
+    .pcStuff {
+        grid-row: 5 / 7 ;
+        grid-column: 1;
+    }
+
+    .pcStuff p{
+        color: chocolate;
+        margin-left:30px;
+    }
+    .pcStuff input {
+        margin-left: 30px;
+        background-color:rgb(238,248,247);
+        color:rgb(164,208,198);
+    }
+    .pcStuff input:hover{
+        color: indigo;
+    }
+
+    .pcButtons {
+        margin-top: 25px;
+        grid-row:4 / 5;
+        grid-column: 2 / 7;
+        width: 100%;
+    }
+    .pcButtons figure{
+        justify-content: space-around;
+        flex-direction: row;
+        display: flex;
+        max-width: 100%;
+    }
+    .pcButtons figure input{
+        background-color:rgb(238,248,247);
+        color:rgb(164,208,198);
+        width: 100%;
+        height:30px;
+        
+    }
+
+    .item-1 {
+        grid-row: 2 / 5;
+        grid-column: 1;
+    }
+
+    .item nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .item-1 nav a {
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .item-2 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    #logo {
+        border-radius: 70%;
+        width: 75%;
+    }
+
+    .item-3 {
+        grid-row: 1 / 5;
+        grid-column: 2 / 7;
+        width:100%;
+    }
+
+    .item-3 figure {
+        max-width: 100%;
+    }
+    .item-3 figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .item-3 figcaption{
+        display: none;
+    }
+    .item-3 p{
+        display: none;
+    }
+
+    .item-4 {
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        grid-row: 5 / 7;
+        grid-column: 2 / 5;
+
+    }
+
+    .item-4 img {
+        margin-top: 13px;
+        float: left;
+        max-width: 100%;
+        max-height: 80px;
+    }
+
+    .item-4 p {
+        z-index: 1;
+        text-align: center;
+        margin-left: 150px;
+        max-width: 100%;
+
+    }
+
+
+    .item-5 {
+        grid-row: 5 / 6;
+        grid-column: 5 / 6;
+        text-align: center;
+    }
+    .item-5 form {
+        display: flex;
+        text-align: right;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right:15px;
+        gap: 10px;
+
+    }
+    .Claudio {
+        grid-row: 6 / 14;
+        grid-column: 2 / 3;
+        width: 15vw;
+    }
+
+    .Claudio img {
+        max-width: 100%;
+    }
+
+    .Claudio p {
+        text-align: left;
+    }
+
+    .Claudio a {
+        text-align: center;
+    }
+
+    .Vivaldi {
+        max-width: 209.55px;
+        text-align: center;
+        grid-row: 6 / 14;
+        grid-column: 5 / 6;
+    }
+
+    .Vivaldi img {
+        max-width: 100%;
+        max-height: 253.36px;
+    }
+
+    .Vivaldi p {
+        margin: auto;
+        text-align: center;
+    }
+
+    .Vivaldi a {
+        display: block;
+        text-align: center;
+    }
+
+    .Johann {
+        grid-row: 6 / 14;
+        grid-column: 3 / 4;
+        max-width: 209.55px;
+    }
+
+    .Johann img {
+        width: 100%;
+        max-height: 253.36px;
+    }
+
+    .Johann p {
+        text-align: center;
+        margin: auto;
+
+    }
+
+    .Johann a {
+        display: block;
+        text-align: center;
+    }
+
+    .George {
+        grid-row: 6 / 14;
+        grid-column: 4 / 5;
+        width: 100%;
+    }
+
+    .George img {
+        max-width: 100%;
+    }
+
+    .George p {
+        text-align: left;
+    }
+
+    .George a {
+        text-align: center;
+    }
+
+
+
+    .item-6 {
+        display: none;
+    }
+
+    .item-7 {
+        display: none;
+    }
+
+    .item-8 {
+        display: none;
+    }
+
+    .item-9 {
+        display: none;
+    }
+
+    .laptoplayout {
+        display: none;
+    }
+
+}
